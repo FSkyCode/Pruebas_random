@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mi primera página</title>
-  </head>
-  <body>
-    <h1>¡Hola mundo!</h1>
-    <p>Esto es una página hecha por mí.</p>
-<button onclick="location.href='si.html'">Ir a la página 3!</button>
-  </body>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url('imagenes/fondo.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .caja {
+      background-color: rgba(0, 0, 0, 0.6); /* Negro con transparencia */
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="caja">
+    <h1>¡Bienvenido!</h1>
+    <p>Esto está centrado con fondo semitransparente.</p>
+  </div>
+</body>
 </html>
