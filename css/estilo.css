@@ -1,1 +1,14 @@
-hi
+.dialogo {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ffffff44;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  max-width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
