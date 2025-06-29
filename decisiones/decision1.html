@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Prueba de diálogo</title>
+  <title>Prototipo</title>
   <link rel="stylesheet" href="../css/cuadro.css">
-  <style>
+<style>
     body {
       margin: 0;
       background: #000 url('../imagenes/fondo.png') center/cover no-repeat;
@@ -13,12 +13,13 @@
   </style>
 </head>
 <body>
+  <div class="dialogo" id="dialogo"></div>
 
-  <div class="dialogo aparecer" id="miDialogo"></div>
+  <div id="opciones">
+    <button class="opcion" id="op1">Opción 1</button>
+    <button class="opcion" id="op2">Opción 2</button>
+  </div>
 
   <script src="../js/texto.js"></script>
-  <script>
-    escribirTexto("¡Bienvenido al prototipo de novela visual!", "miDialogo");
-  </script>
 </body>
 </html>
