@@ -15,34 +15,41 @@
     }
 
     .caja {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 30px 40px;
-      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 50px 60px;
+      border-radius: 20px;
       color: white;
       text-align: center;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+      max-width: 90%;
     }
 
     h1 {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      font-size: 32px;
     }
 
     .boton {
       display: block;
-      margin: 10px auto;
-      padding: 12px 24px;
+      margin: 15px auto;
+      padding: 16px 32px;
       background-color: #00aaff;
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s;
-      width: 200px;
+      font-size: 18px;
+      width: 240px;
+      transition: background-color 0.3s, transform 0.2s;
     }
 
     .boton:hover {
       background-color: #0077cc;
+      transform: scale(1.03);
+    }
+
+    .boton:active {
+      background-color: #00cc88; /* verde al hacer clic */
     }
   </style>
 </head>
