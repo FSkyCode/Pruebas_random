@@ -1,0 +1,9 @@
+{
+  "Dialogo": [
+    "Esta noche es muy...",
+    "oscura...",
+    "Tan oscura como...",
+    "tu alma...",
+    ["Salir", "Respirar"]
+  ]
+}
