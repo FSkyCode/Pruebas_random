@@ -1,1 +1,24 @@
-si
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba de diálogo</title>
+  <link rel="stylesheet" href="cuadro.css">
+  <style>
+    body {
+      margin: 0;
+      background: #000 url('imagenes/fondo.jpg') center/cover no-repeat;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dialogo aparecer" id="miDialogo"></div>
+
+  <script src="texto.js"></script>
+  <script>
+    escribirTexto("¡Bienvenido al prototipo de novela visual!", "miDialogo");
+  </script>
+</body>
+</html>
