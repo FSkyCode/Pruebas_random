@@ -66,6 +66,7 @@ fetch("dialogo.json")
     dialogo = data.Dialogo;
     mostrarSiguiente();
   });
+
 function activarPantallaCompleta() {
   const docElem = document.documentElement;
   if (docElem.requestFullscreen) {
@@ -74,5 +75,13 @@ function activarPantallaCompleta() {
     docElem.webkitRequestFullscreen(); // Safari
   } else if (docElem.msRequestFullscreen) {
     docElem.msRequestFullscreen(); // IE
+  }
+}
+
+function forzarHorizontal() {
+  if (screen.orientation && screen.orientation.lock) {
+    screen.orientation.lock('landscape').catch(err => {
+      console.warn("No se pudo forzar horizontal:", err);
+    });
   }
 }
