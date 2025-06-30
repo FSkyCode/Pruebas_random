@@ -49,7 +49,7 @@
     }
 
     .boton:active {
-      background-color: #00cc88; /* verde al hacer clic */
+      background-color: #00cc88;
     }
   </style>
 </head>
@@ -62,24 +62,23 @@
   </div>
 
   <script>
-<script>
-function iniciarJuego() {
-  activarPantallaCompleta().then(() => {
-    forzarHorizontal();
-    location.href = "decision1.html";
-  }).catch(() => {
-    // Si falla fullscreen, igual redirige
-    location.href = "decision1.html";
-  });
-}
-    function salir() {
-      // Intenta cerrar la ventana
-      window.close();
+    function iniciarJuego() {
+      // Activar pantalla completa y luego cambiar de página
+      const docElem = document.documentElement;
 
-      // Mensaje alternativo si no se puede cerrar
+      if (docElem.requestFullscreen) {
+        docElem.requestFullscreen().finally(() => {
+          location.href = "decision1.html";
+        });
+      } else {
+        location.href = "decision1.html";
+      }
+    }
+
+    function salir() {
+      window.close();
       alert("No se puede cerrar la pestaña automáticamente. Puedes cerrarla manualmente.");
     }
   </script>
-<script src="../js/texto.js"></script>
 </body>
 </html>
