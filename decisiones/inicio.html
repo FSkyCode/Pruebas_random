@@ -62,12 +62,15 @@
   </div>
 
   <script>
+<script>
 function iniciarJuego() {
-  activarPantallaCompleta();
-  forzarHorizontal();
-  setTimeout(() => {
+  activarPantallaCompleta().then(() => {
+    forzarHorizontal();
     location.href = "decision1.html";
-  }, 200); // Espera pequeña para que entre en fullscreen antes de redirigir
+  }).catch(() => {
+    // Si falla fullscreen, igual redirige
+    location.href = "decision1.html";
+  });
 }
     function salir() {
       // Intenta cerrar la ventana
