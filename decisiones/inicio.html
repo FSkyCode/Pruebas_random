@@ -56,12 +56,19 @@
 <body>
   <div class="caja">
     <h1>Menú Principal</h1>
-    <button class="boton" onclick="activarPantallaCompleta();location.href='decision1.html'">Jugar</button>
+    <button class="boton" onclick="iniciarJuego()">Jugar</button>
     <button class="boton" onclick="location.href='../prueba.html'">Ajustes</button>
     <button class="boton" onclick="salir()">Salir</button>
   </div>
 
   <script>
+function iniciarJuego() {
+  activarPantallaCompleta();
+  forzarHorizontal();
+  setTimeout(() => {
+    location.href = "decision1.html";
+  }, 200); // Espera pequeña para que entre en fullscreen antes de redirigir
+}
     function salir() {
       // Intenta cerrar la ventana
       window.close();
@@ -70,5 +77,6 @@
       alert("No se puede cerrar la pestaña automáticamente. Puedes cerrarla manualmente.");
     }
   </script>
+<script src="../js/texto.js"></script>
 </body>
 </html>
