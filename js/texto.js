@@ -66,3 +66,13 @@ fetch("dialogo.json")
     dialogo = data.Dialogo;
     mostrarSiguiente();
   });
+function activarPantallaCompleta() {
+  const docElem = document.documentElement;
+  if (docElem.requestFullscreen) {
+    docElem.requestFullscreen();
+  } else if (docElem.webkitRequestFullscreen) {
+    docElem.webkitRequestFullscreen(); // Safari
+  } else if (docElem.msRequestFullscreen) {
+    docElem.msRequestFullscreen(); // IE
+  }
+}
