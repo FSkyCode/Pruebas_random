@@ -1,6 +1,56 @@
-<iframe
-  src="https://youtu.be/BK4x8n7XCbw"
-  frameborder="0"
-  allow="autoplay; fullscreen"
-  style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;">
-</iframe>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redireccionando...</title>
+  <meta http-equiv="refresh" content="5;url=decisiones/inicio.html">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none; /* Evita clics en el video */
+    }
+
+    .caja {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    src="https://youtu.be/BK4x8n7XCbw"
+    frameborder="0"
+    allow="autoplay; fullscreen">
+  </iframe>
+
+  <div class="caja">
+    <h1>¡Bienvenido!</h1>
+    <p>Redirigiendo al juego...<br>
+    Si no ocurre, haz clic <a href="decisiones/inicio.html">aquí</a>.</p>
+  </div>
+</body>
+</html>
